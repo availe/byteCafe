@@ -54,38 +54,38 @@ class Items {
     // start of data
     static items = [
         { // index 0
-            image: "/images/an americano coffee with a spoon of coffee beans on the table.webp",
+            image: "/byteCafe/images/an americano coffee with a spoon of coffee beans on the table.webp",
             name: "Classic Americano",
             price: 5.99,
             isDrink: true
 
         },
         { // index 1
-            image: "/images/a delicious slice of chocolate cheesecake.jpg",
+            image: "/byteCafe/images/a delicious slice of chocolate cheesecake.jpg",
             name: "Choco Cheesecake Slice",
             price: 7.99,
             isDrink: false
         },
         { // index 2
-            image: "/images/almond bubble tea on a white table.jpg",
+            image: "/byteCafe/images/almond bubble tea on a white table.jpg",
             name: "Bubble Tea",
             price: 8.99,
             isDrink: true
         },
         { // index 3
-            image: "/images/two cups of iced coffee.jpg",
+            image: "/byteCafe/images/two cups of iced coffee.jpg",
             name: "Iced Coffee",
             price: 7.99,
             isDrink: true
         },
         { // index 4
-            image: "/images/a delicious blueberry muffin.jpeg",
+            image: "/byteCafe/images/a delicious blueberry muffin.jpeg",
             name: "Blueberry Muffin",
             price: 7.99,
             isDrink: false
         },
         { // index 5
-            image: "/images/freshly-made vanilla ice cream with strawberries.webp",
+            image: "/byteCafe/images/freshly-made vanilla ice cream with strawberries.webp",
             name: "Vanilla Delight",
             price: 6.99,
             isDrink: false
