@@ -1,0 +1,21 @@
+@use 'homeContent';
+@use '../generic/layout';
+@use '../generic/table';
+@use '../generic/mixins';
+
+#clickable-banner {
+  align-self: center;
+  text-decoration: none;
+}
+
+.image-sub-cell img {
+  transition: transform 0.3s ease;
+}
+
+.image-sub-cell img:hover {
+  transform: scale(1.03);
+}
+
+html {
+  background: url("../../images/bg_home.jpeg") repeat;
+}

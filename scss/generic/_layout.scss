@@ -1,0 +1,139 @@
+@use 'mixins';
+
+body {
+  margin: 0;
+  background-size: cover;
+  color: white;
+  padding: 0 1vw;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav ul, footer ul {
+  @include mixins.flex-row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#currPage {
+  color: yellow;
+  text-decoration: underline;
+}
+
+footer {
+  @include mixins.flex-row;
+  justify-content: space-between;
+  margin-right: 2.5vw;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 2.5vw;
+}
+
+footer ul {
+  gap: 1vw;
+  padding: 0 1vw;
+}
+
+#home_content {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#dropdown {
+  position: relative;
+}
+
+#dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+}
+
+#dropdown-btn:hover {
+  text-decoration: underline;
+}
+
+
+#dropdown-menu {
+  position: absolute;
+  top: calc(100% + .25rem);
+  left: -12vw;
+  width: 27vw;
+  background: #8c1422;
+  padding: .75rem;
+  border-radius: .25rem;
+  opacity: 0;
+  text-align: center;
+  @include mixins.flex-col;
+}
+
+#dropdown-btn:focus + #dropdown-menu {
+  opacity: 1;
+}
+
+#dropdown-menu * {
+  background: none;
+  border: none;
+}
+
+#dropdown-menu table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pre-cart-items, #cartItems {
+  text-align: center;
+  align-self: center;
+}
+
+#dropdown-menu table td, #dropdown-menu table th {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+#dropdown-menu button {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+  color: white;
+  background: rgba(212, 0, 83, 0.8);
+  width: fit-content;
+  padding: .5rem;
+  align-self: center;
+  transition: transform 0.3s ease;
+}
+
+#dropdown-menu button:hover {
+  transform: scale(1.1);
+  background: rgba(202, 0, 80, 0.8);
+}
+
+#dropdown-menu p {
+  text-align: left;
+  margin: 0;
+}
+
+#pricesDiv {
+  @include mixins.flex-col;
+  align-self: center;
+  gap: .5rem;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>byteCafe</title>
+    <link rel="stylesheet" href="../scss/index/indexStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="currPage">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <div id="dropdown">
+            <button id="dropdown-btn">Cart</button>
+            <div id="dropdown-menu">
+              <p id="pre-cart-items">Cart only usable in products page</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="home_content">
+      <h1>The best cafe in town</h1>
+      <p>
+        Our products are derived from the finest coffee beans from South America
+      </p>
+      <a href="products.html" id="clickable-banner">
+        <div id="holiday_sale">
+          <p>Exclusive holiday sale</p>
+          <p>Get 25% off on all drink-plus-meal combos</p>
+        </div>
+      </a>
+
+      <div id="featured-products">
+        <h1>Our featured products</h1>
+        <table id="featured-products-table"></table>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li id="copyright">2023 Byte Cafe</li>
+      </ul>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+      </ul>
+    </footer>
+    <script type="module" defer src="../js/main.mjs"></script>
+  </body>
+</html>

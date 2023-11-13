@@ -1,0 +1,79 @@
+@use '../generic/layout';
+@use '../generic/table';
+@use '../generic/mixins';
+
+h1, h2 {
+  text-align: center;
+}
+
+#leadershipSection {
+  @include mixins.flex-row;
+  #paragraphSection, figure {
+    width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+
+figure {
+  @include mixins.flex-col;
+  gap: 1rem;
+}
+
+html {
+  background: url("../../images/bg_about.jpeg") repeat-y;
+}
+
+main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  @include mixins.flex-col;
+}
+
+#paragraphSection {
+  @include mixins.flex-col;
+}
+
+#contact-info {
+  @include mixins.flex-row;
+  justify-content: space-evenly;
+  border-top: #8c1422 1px solid;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  @include mixins.flex-col;
+  width: 40vw;
+  gap: 1rem;
+  align-self: center;
+}
+
+form textarea {
+  height: 40vh;
+}
+
+form button {
+  width: 10vw;
+  background: white;
+  padding: .2rem;
+  align-self: center;
+}
+
+form button:hover {
+  background: rgb(240,240,240)
+}

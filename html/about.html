@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>byteCafe</title>
+    <link rel="stylesheet" href="../scss/about/aboutStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html" id="currPage">About</a></li>
+        <li>
+          <div id="dropdown">
+            <button id="dropdown-btn">Cart</button>
+            <div id="dropdown-menu">
+              <p id="pre-cart-items">Cart only usable in products page</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Proud locally-owned business since 1891</h1>
+      <p>
+        Ever since our founder Casey David created byteCafe in 1891, our mission
+        has been to provide high quality organic coffee. Sourced straight from
+        locally-owned sustainable farms across South America, our famous coffees
+        provide a taste unmatched across the Northeast. We continuously seek to
+        improve our selection of foods and drinks while keeping true to our
+        quality standards.
+      </p>
+      <h2>Our leadership</h2>
+      <section id="leadershipSection">
+        <section id="paragraphSection">
+          <p>
+            Today's byteCafe is in the capable hands of Taylor Evans. Evans is a
+            true coffee aficionado, having graduated with a Master's degree in
+            Coffee Science from the University of California, Davis. Evan's
+            commitment to making the greatest coffee has led him to travel the
+            seven continents in search for the hidden coffee-making secrets of
+            the world. It's on the backs of all the great coffee brewers of
+            history, that byteCafe is able to present its selections of coffees,
+            drinks, and delicious foods.
+          </p>
+          <p>
+            At the heart of byteCafe is our community - the coffee lovers that
+            made our business possible. We seek to contribute a peaceful
+            relaxing atmosphere where people can come in to hang out, study, and
+            enjoy a nice sip of coffee. Feel free to visit at any time.
+          </p>
+        </section>
+        <figure>
+          <img
+            src="../images/about_us_img.webp"
+            alt="A picture depicting the interior of a byteCafe coffee shop"
+          />
+          <figcaption>
+            Our commitment to quality stops not at taste, but also at the
+            atmosphere we seek to provide
+          </figcaption>
+        </figure>
+      </section>
+      <section id="contact-info">
+        <div>
+          <p>Call Us: <a href="tel:35-155-455-9555">+35-155-455-9555</a></p>
+          <p>
+            Email Us:
+            <a href="mailto:customers@byteCafe.net">customers@byteCafe.net</a>
+          </p>
+        </div>
+        <div>
+          <p>Location: Silicon Street, California</p>
+          <p>Website: <a href="index.html">byteCafe.com</a></p>
+        </div>
+      </section>
+      <form
+        action="mailto:customers@byteCafe.net"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="email">Email</label>
+        <input id="email" name="Email" type="email" />
+        <label for="message">Message</label>
+        <textarea id="message" name="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li id="copyright">2023 Byte Cafe</li>
+      </ul>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+      </ul>
+    </footer>
+    <script type="module" defer src="../js/main.mjs"></script>
+  </body>
+</html>

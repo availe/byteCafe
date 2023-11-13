@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  background-size: cover;
+  color: white;
+  padding: 0 1vw;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav ul, footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#currPage {
+  color: yellow;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 2.5vw;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 2.5vw;
+}
+
+footer ul {
+  gap: 1vw;
+  padding: 0 1vw;
+}
+
+#home_content {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#dropdown {
+  position: relative;
+}
+
+#dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+}
+
+#dropdown-btn:hover {
+  text-decoration: underline;
+}
+
+#dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: -12vw;
+  width: 27vw;
+  background: #8c1422;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#dropdown-btn:focus + #dropdown-menu {
+  opacity: 1;
+}
+
+#dropdown-menu * {
+  background: none;
+  border: none;
+}
+
+#dropdown-menu table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pre-cart-items, #cartItems {
+  text-align: center;
+  align-self: center;
+}
+
+#dropdown-menu table td, #dropdown-menu table th {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+#dropdown-menu button {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+  color: white;
+  background: rgba(212, 0, 83, 0.8);
+  width: fit-content;
+  padding: 0.5rem;
+  align-self: center;
+  transition: transform 0.3s ease;
+}
+
+#dropdown-menu button:hover {
+  transform: scale(1.1);
+  background: rgba(202, 0, 80, 0.8);
+}
+
+#dropdown-menu p {
+  text-align: left;
+  margin: 0;
+}
+
+#pricesDiv {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 0.5rem;
+}
+
+table tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2.5vw;
+}
+
+.table-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  padding: 1rem;
+}
+
+.name-sub-cell {
+  color: honeydew;
+  outline: honeydew solid 1px;
+  padding: 0.5rem;
+}
+
+.options-sub-cell {
+  color: honeydew;
+}
+
+.image-sub-cell img {
+  height: 40vh;
+  width: 20vw;
+  object-fit: cover;
+}
+
+.options-sub-cell button {
+  background: white;
+}
+
+.options-sub-cell button:hover {
+  background: #ebe8e8;
+}
+
+html {
+  background: url("../../images/bg_products.webp");
+}
+
+#products_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.options-sub-cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+table {
+  align-self: center;
+  background: rgb(36, 39, 56);
+  width: fit-content;
+  border: rgba(36, 39, 56, 0.5) solid 1rem;
+}
+
+.name-sub-cell {
+  background: rgba(10, 49, 121, 0.2);
+}
+
+.table-cell {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+tr {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#catalog {
+  background: rgba(140, 20, 34, 0.2);
+  width: fit-content;
+  align-self: center;
+}
+
+#banner1, #banner2 {
+  background: rgb(0, 0, 0);
+  align-self: center;
+  height: max-content;
+  padding-top: 0.005vh;
+  padding-bottom: 0.005vh;
+}
+
+section {
+  margin-top: 0;
+  width: fit-content;
+  align-self: center;
+}
+
+/*# sourceMappingURL=productsStyle.css.map */

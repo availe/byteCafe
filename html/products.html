@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../scss/products/productsStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" id="currPage">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <div id="dropdown">
+            <button id="dropdown-btn">Cart</button>
+            <div id="dropdown-menu">
+              <p id="cartItems">No items in cart</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="products_content">
+      <h1>Our Catalog</h1>
+      <section>
+        <div id="banner1">
+          <h2>Drinks</h2>
+        </div>
+        <table id="drinksTable"></table>
+      </section>
+      <section>
+        <div id="banner2">
+          <h2>Foods</h2>
+        </div>
+        <table id="foodsTable"></table>
+      </section>
+    </div>
+    <footer>
+      <ul>
+        <li id="copyright">2023 Byte Cafe</li>
+      </ul>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+      </ul>
+    </footer>
+    <script type="module" defer src="../js/main.mjs"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@use 'mixins';
+
+table tr {
+  @include mixins.flex-row;
+  justify-content: space-evenly;
+  gap: 2.5vw;
+}
+
+.table-cell {
+  @include mixins.flex-col;
+  gap: 1.5vh;
+  padding: 1rem;
+}
+
+.name-sub-cell {
+  color: honeydew;
+  outline: honeydew solid 1px;
+  padding: .5rem;
+}
+
+.options-sub-cell {
+  color: honeydew;
+}
+
+.image-sub-cell img {
+  height: 40vh;
+  width: 20vw;
+  object-fit: cover;
+}
+
+.options-sub-cell button {
+  background: white;
+}
+
+.options-sub-cell button:hover {
+  background: #ebe8e8;
+}

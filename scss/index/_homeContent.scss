@@ -1,0 +1,38 @@
+@use '../generic/mixins';
+
+#home_content {
+  @include mixins.flex-col;
+  text-align: center;
+}
+
+#featured-products h1 {
+  text-align: center;
+}
+
+#featured-products-grid {
+  @include mixins.flex-row;
+  justify-content: space-evenly;
+}
+
+#featured-products-table {
+  gap: 20vw;
+  width: 80%;
+  margin: auto;
+  border: black dashed 10px;
+  background: #242738;
+}
+
+#holiday_sale {
+  background: #8c1422;
+  width: fit-content;
+  align-self: center;
+  color: lightgoldenrodyellow;
+  padding: 1vw;
+  transition: transform 0.3s ease;
+}
+
+#holiday_sale:hover {
+  transform: scale(1.2);
+  margin: 1rem;
+  background: #7a1220;
+}
